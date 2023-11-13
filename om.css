@@ -1,0 +1,151 @@
+body{
+    background-color:black;
+    color: #F9E2D5;
+    font-family: 'Inter', sans-serif;
+    
+  }
+  *{
+    scroll-behavior: smooth;
+  }
+  .home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background:#8EA66A;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    line-height: 50px;
+  }
+  
+  .home-button img{
+   width: 50px;
+   padding: 10px;  
+  }
+  
+  .home-button:hover {
+    background:#F9E2D5;
+  }
+  .logo img{
+     width:50%;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+     margin-bottom: 0;
+  } 
+  
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #151B0B;
+      color: #F9E2D5;
+      padding: 10px;
+    }
+  
+  .menu-list {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      background-color:black;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      text-align: center;
+  }
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+    .menu-list::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      width: 100%;
+      height: 10px;
+    }
+    
+    .menu-list li {
+      margin: 0;
+    }
+    
+    .menu-list li a {
+      display: block;
+      padding: 10px;
+      color: #F9E2D5;
+      text-decoration: none;
+    }
+    .menu-list.show-menu {
+      display: block;
+    }
+    
+  .om-mig h2{
+    color:#8EA66A;
+    font-size: 40px;
+    margin-left: 30px;
+}
+.om-mig p{
+    margin: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .container ul li{
+    list-style:none;
+  }
+
+    footer{
+        background-color: #151B0B;
+        text-align: center;
+        list-style:none;
+        color: #F9E2D5;
+      }
+
+      /** desktop her**/ 
+  
+@media only screen and (min-width: 768px) {
+    .logo img{
+      width:20%;
+    }
+   .menu-list {
+        display: flex;
+        justify-content: space-between;
+        position: static;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+   }
+   .menu-icon img{
+    display:none;
+ }
+   .menu-list li {
+        margin: 0 0px;
+   }
+   footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+    
+}
